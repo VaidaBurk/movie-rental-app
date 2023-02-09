@@ -1,0 +1,75 @@
+.movies-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 0px 25px 30px 18px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+img {
+    width: 12px;
+    vertical-align: middle;
+}
+.rentButton {
+    background-color: #363636;
+    border: none;
+    color: white;
+    padding: 6px 18px;
+    font-size: 9px;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+.rentButtonNotAvailable {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 6px 18px;
+    font-size: 9px;
+    font-weight: 500;
+    margin: 0;
+    cursor: not-allowed;
+}
+.movies-table {
+    width: 100%;
+    font-size: 9px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+.movies-table th {
+    text-align: left;
+}
+.movies-table td {
+    background-color: #D9D9D9;
+}
+.name-column {
+    border-radius: 12px 0 0 12px;
+    padding-left: 12px;
+}
+.genre-column {
+    padding-left: 10px;
+}
+.price-column {
+    padding-left: 15px;
+}
+.availability-column {
+    text-align: center;
+}
+.rent-column {
+    text-align: end;
+    padding: 0;
+    width: 55px;
+}
+#instock-header {
+    text-align: center;
+}
+.name-header {
+    padding-left: 12px;
+}
+.genre-header {
+    padding-left: 10px;
+}
+.price-header {
+    padding-left: 15px;
+}

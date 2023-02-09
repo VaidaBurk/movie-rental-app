@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">Movie Rental</a>
+    </header>
+    <div class="card">
+        <form action="">
+            <label for="emailSigning">Email</label>
+            <input type="email" id="emailSigning" placeholder="email">
+            <div id="invalidEmailMessage" class="message">Please enter valid email</div>
+            <label for="passwordSigning">Password</label>
+            <input type="password" id="passwordSigning" placeholder="password">
+            <div id="invalidPasswordMessage" class="message">Please enter password</div>
+            <input type="button" onclick="signIn()" class="button" value="Sign in">
+        </form>
+    </div>
+    <button id="showRegisterButton" class="button" onclick="showRegisterCard()">Register</button>
+    <div class="card" id="registerCard">
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name">
+            <div id="invalidNameMessage" class="message">Please enter valid name</div>
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" placeholder="surname">
+            <div id="invalidSurnameMessage" class="message">Please enter valid surname</div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email">
+            <div id="invalidRegisterEmailMessage" class="message">Please enter valid email</div>
+
+            <label for="emailAgain">Email again</label>
+            <input type="email" id="emailAgain" placeholder="email">
+            <div id="invalidRegisterEmailAgainMessage" class="message">Please enter valid email</div>
+            <div id="emailDontMatchMessage" class="message">Email doesn't match</div>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password">
+            <div id="invalidRegisterPasswordMessage" class="message">Please enter valid password</div>
+
+            <label for="passwordAgain">Password again</label>
+            <input type="password" id="passwordAgain" placeholder="password">
+            <div id="invalidRegisterPasswordAgainMessage" class="message">Please enter valid password</div>
+            <div id="passwordDontMatchMessage" class="message">Password doesn't match</div>
+
+            <input type="button" class="button" onclick="register()" value="Register">
+        </form>
+    </div>
+    <footer>
+        <div>Made by: Vaida Burkauskaite</div>
+        <div>2023</div>
+    </footer>
+    <script src="/script/login.js"></script>
+</body>
+
+</html>

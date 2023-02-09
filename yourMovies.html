@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/your-movies.css">
+    <link rel="stylesheet" href="/styles/general.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Your Movies</title>
+</head>
+<body>
+    <header>Movie rental</header>
+    <nav>
+        <ul>
+            <li >
+                <a id="home-link" href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="yourMovies.html">Your movies</a>
+            </li>
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="movies-card">
+            <h5>Your movies</h5>
+            <table class="movies-table" id="movieTable">
+                <tr>
+                    <th class="name-header">Name</th>
+                    <th class="genre-header">Genre</th>
+                    <th class="time-header">Time</th>
+                    <th id="price-header">Price</th>
+                    <th id="rent-header"></th>
+                </tr>
+                <tr>
+                    <td class="name-column">Batman</td>
+                    <td class="genre-column">Action</td>
+                    <td class="time-column">
+                        <button class="time-btn">&#60;</button>
+                        <input type="number" class="time">
+                        <button class="time-btn">&#62;</button>
+                    </td>
+                    <td class="price-column">4.55$</td>
+                    <td class="remove-column"><button class="remove-button">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="name-column">Batman</td>
+                    <td class="genre-column">Action</td>
+                    <td class="time-column">
+                        <button class="time-btn">&#60;</button>
+                        <div class="time">12h</div>
+                        <button class="time-btn">&#62;</button>
+                    </td>
+                    <td class="price-column">4.55$</td>
+                    <td class="remove-column"><button class="remove-button">Remove</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div>Made by: Vaida Burkauskaite</div>
+        <div>2023</div>
+    </footer>
+
+    <script src="/script/moviesList.js"></script>
+    <script src="/script/yourMovies.js"></script>
+
+</body>
+</html>
