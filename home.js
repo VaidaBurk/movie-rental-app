@@ -96,8 +96,8 @@ function generateMovieTable() {
     <td class="price-column">${movie.countInStock}</td>
 
     <td class="availability-column">${movie.countInStock > 0 ? `
-        <img id="${movie.id}-availability" src='/icons/check.png' alt='available'></td>` : `
-        <img id="${movie.id}-availability" src='/icons/del.png' alt='available'></td>`}
+        <img id="${movie.id}-availability" src='check.png' alt='available'></td>` : `
+        <img id="${movie.id}-availability" src='del.png' alt='not available'></td>`}
         
     ${movie.countInStock > 0 ?
         `<td class="rent-column"><button class="rentButton" id=${movie.id}>Rent</button></td>` :

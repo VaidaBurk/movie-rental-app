@@ -1,4 +1,8 @@
 let myMovies = JSON.parse(localStorage.getItem("myMovies"));
+if (myMovies === null){
+    localStorage.setItem("myMovies", JSON.stringify([]));
+}
+
 let moviesInStock = JSON.parse(localStorage.getItem("moviesInStock"));
 
 generateMovieTable();
