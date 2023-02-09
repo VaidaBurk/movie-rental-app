@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    padding: 0px 18px 6px 18px;
+    background-color: white;
+    border-radius: 15px;
+}
+#registerCard {
+    display: none;
+}
+input {
+    display: block;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 2px 5px;
+    font-size: 8px;
+}
+input:focus {
+    outline: none;
+    border: solid #363636 1px;
+    padding: 2px 4px;
+}
+label {
+    font-size: 6px;
+}
+.button {
+    background-color: #363636;
+    border: none;
+    color: white;
+    font-size: 8px;
+    border-radius: 12px;
+    width: 70px;
+    margin: 8px auto 0 auto;
+    padding: 3px;
+    cursor: pointer;
+}
+#showRegisterButton {
+    display: block;
+    margin: auto;
+}
+.message {
+    font-size: 7px;
+    margin-top: 4px;
+    color: #C93333;
+    font-weight: bold;
+    display: none;
+}
